@@ -1,0 +1,31 @@
+body {
+	/* background-image: url("../img/Koala.jpg"); */
+	background-color: #cccccc;
+ }
+header {
+	color: blue;
+	font-size: 5em;
+	text-align: center;
+}
+p {
+	color: black;
+	font-family: courier;
+}
+img.exhibition {
+	max-width: 22%;
+	height: auto;
+	border-radius: 5%;
+	border: 1px solid red;
+}
+
+img.social-link {
+	width: 3em;
+	height: 3em;
+}
+.right {
+    float: right
+}
+.card {
+	margin-top: 0.5em;
+}
+		
