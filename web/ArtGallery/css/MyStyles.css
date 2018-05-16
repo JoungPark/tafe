@@ -12,10 +12,8 @@ p {
 	font-family: courier;
 }
 img.exhibition {
-	max-width: 22%;
-	height: auto;
-	border-radius: 5%;
-	border: 1px solid red;
+	height: 18rem;
+	border: 1px solid lightgray;
 }
 
 img.social-link {
