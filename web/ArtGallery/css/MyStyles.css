@@ -1,23 +1,112 @@
 body {
 	/* background-image: url("../img/Koala.jpg"); */
 	background-color: #cccccc;
- }
-header {
-	color: blue;
-	font-size: 5em;
-	text-align: center;
-}
-p {
 	color: black;
 	font-family: courier;
 }
-img.exhibition {
-	max-width: 22%;
-	height: auto;
-	border-radius: 5%;
-	border: 1px solid red;
+
+header {
+	width:100%;
+}
+nav {
+	font-family: 'Courier New';
+}
+section {
+	color: black;
+	font-family: 'Times';
+}
+footer {
+	font-family: Arial;
+	font-size: 1em;
+	font-weight: normal;
+	font-stretch: condensed;
+	color: darkslateblue;
 }
 
+/* navbar */
+ul.navbar-nav {
+    list-style-type: none;
+    margin: 0;
+	margin-bottom: 0.5em;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+	top: 0;
+}
+li.nav-item {
+    float: left;
+}
+li.nav-item-right {
+    float: right;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: #111;
+}
+.active {
+	font-weight: bold;
+    background-color: #4CAF50;
+}
+
+/* grid */
+.col-25p {
+	float: left;
+	width: 25%;
+}
+.col-33p {
+	float: left;
+	width: 33.33%;
+}
+.col-67p {
+	float: left;
+	width: 66.66%;
+}
+.col-50p {
+	float: left;
+	width: 50%;
+}
+.col-75p {
+	float: left;
+	width: 75%;
+}
+.row:after {
+	/* Clear floats after the columns */
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.titlebox {
+	font-size: 1.3em;
+	margin: 0;
+	padding: 0.5em;
+	border: 1px solid darkgray;
+	background-color: #eeeeee;
+	max-height: 50%;
+}
+
+img.exhibition {
+	height: 20em;
+	width: 100%;
+	border: 1px solid lightgray;
+}
+
+.image-caption {
+	margin: 0;
+}
+
+/* footer */
+.footer-copyright {
+	text-align: center;
+}
 img.social-link {
 	width: 3em;
 	height: 3em;
@@ -25,7 +114,31 @@ img.social-link {
 .right {
     float: right
 }
+
+/* card */
 .card {
 	margin-top: 0.5em;
+	border: 1px solid darkgray;
 }
-		
+.card-title {
+	margin: 0.3em;
+	font-family: courier;
+	font-size: 1.1em;
+}
+.card-body {
+	padding: 0.2em;
+}
+
+/* form */
+.form-group {
+	width: 100%;
+}
+.form-label {
+	font-size: 1em;
+	display:inline-block;
+	width: 6rem;
+}
+.form-control {
+	width: 100%;
+	min-width: 10rem;
+}

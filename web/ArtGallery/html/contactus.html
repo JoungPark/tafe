@@ -2,10 +2,9 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Northside Art Gallery</title>
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
 	<link rel="stylesheet" href="../css/MyStyles.css">
 	<style>
 		.label {
@@ -14,75 +13,94 @@
 	</style>
 </head>
 <body>
+	<header>
+		<img class="" style="width:100%;" src="../img/banner.png" alt="location image">
+	</header>
+
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-		<a class="navbar-brand" href="../index.html">Northside Art Gallery</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<ul class="navbar-nav mr-auto">
+			<ul class="navbar-nav">
 				<li class="nav-item"><a class="nav-link" href="../index.html">Home </a></li>
 				<li class="nav-item"><a class="nav-link" href="./future.html">Future Exhibitions</a></li>
 				<li class="nav-item"><a class="nav-link" href="./current.html">Current Exhibition</a></li>
 				<li class="nav-item active"><a class="nav-link" href="./contactus.html">Contact us</a></li>		
-				<li class="nav-item"><a class="nav-link" href="./copyright.html">Copyright</a></li>
+				<li class="nav-item-right"><a class="nav-link" href="./copyright.html">Copyright</a></li>
 			</ul>
 		</div>
 	</nav>
 	<section>
+		<h3 class="titlebox">Contact us</h3>
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-sm-6">
-					<h3>Contact us</h3>
-					<br/>
+				<div class="col-75p">
 					<form>
-						<div class="form-group">
-							<label class="label">Title</label>
-							<input type="radio" name="optionsRadiosInline" id="optionsRadiosInline1" value="option1" checked>Mr
-							<input type="radio" name="optionsRadiosInline" id="optionsRadiosInline2" value="option2">Ms
-							<input type="radio" name="optionsRadiosInline" id="optionsRadiosInline3" value="option3">Mrs
-							<input type="radio" name="optionsRadiosInline" id="optionsRadiosInline4" value="option3">Miss
-						</div>
-						<div class="form-group input-group">
-							<label class="label">Fist Name</label>
-							<input class="form-control">
-						</div>
-						<div class="form-group input-group">
-							<label class="label">Last Name</label>
-							<input class="form-control">
-						</div>
-						<div class="form-group input-group">
-							<label class="label">Street</label>
-							<input class="form-control">
-						</div>
-						<div class="form-group input-group">
-							<label class="label">Suburb</label>
-							<input class="form-control">
-							<label class="label">State</label>
-							<select class="form-control">
-								<option>QLD</option>
-								<option>NSW</option>
-								<option>VCT</option>
-								<option>WA</option>
-								<option>SA</option>
-								<option>NT</option>
-								<option>ACT</option>
-							</select>
-							<label class="label">Post-code</label>
-							<input class="form-control">
-						</div>
-						<div class="form-group input-group">
-							<label class="label">Phone</label>
-							<input class="form-control">
-						</div>
-						<div class="form-group input-group">
-							<label class="label">Email</label>
-							<input id="username" class="form-control">
-							<span class="input-group-addon">@</span>
-							<input class="form-control">
-						</div>
+						<table>
+							<tr>
+								<td><label class="form-label">Title</label></td>
+								<td class="form-control">
+									<input type="radio" name="optionsRadiosInline" id="optionsRadiosInline1" value="option1" checked>Mr
+									<input type="radio" name="optionsRadiosInline" id="optionsRadiosInline2" value="option2">Ms
+									<input type="radio" name="optionsRadiosInline" id="optionsRadiosInline3" value="option3">Mrs
+									<input type="radio" name="optionsRadiosInline" id="optionsRadiosInline4" value="option3">Miss
+								</td>
+							</tr>
+						</table>
+						<table>
+							<tr>
+								<td><label class="form-label">Fist Name</label></td>
+								<td class="form-control"><input class="form-control"></td>
+							</tr>
+						</table>
+						<table>
+							<tr>
+								<td><label class="form-label">Last Name</label></td>
+								<td class="form-control"><input class="form-control"></td>
+							</tr>
+						</table>
+						<table>
+							<tr>
+								<td><label class="form-label">Street</label></td>
+								<td class="form-control"><input class="form-control"></td>
+							</tr>
+						</table>
+						<table>
+							<tr>
+								<td><label class="form-label">Suburb</label></td>
+								<td class="form-control"><input class="form-control"></td>
+								<td><label class="form-control">State</label></td>
+								<td width="30px">
+									<select>
+										<option>QLD</option>
+										<option>NSW</option>
+										<option>VCT</option>
+										<option>WA</option>
+										<option>SA</option>
+										<option>NT</option>
+										<option>ACT</option>
+									</select>
+								</td>
+								<td><label class="form-label">Post-code</label></td>
+								<td class="form-control"><input class="form-control"></td>
+							</tr>
+						</table>
+						<table>
+							<tr>
+								<td><label class="form-label">Phone</label></td>
+								<td class="form-control"><input class="form-control"></td>
+							</tr>
+						</table>
+						<table>
+							<tr>
+								<td><label class="form-label">Email</label></td>
+								<td class="form-control"><input class="form-control"></td>
+								<td><label class="form-control">@</label></td>
+								<td class="form-control"><input class="form-control"></td>
+							</tr>
+						</table>
 						<div class="form-group">
 							<label>Feedback/request</label>
+						</div>
+						<div class="form-group">
 							<textarea class="form-control" rows="10"></textarea>
 						</div>
 						<button type="submit" class="btn btn-default">Submit</button>
@@ -95,12 +113,18 @@
 	</section>
 	<footer>
 		<div class="container">
-			<div class="right">
-				<a href="http://twitter.com"><img class="social-link" src="../img/twitter_icon.png" alt="link to twitter"/></a>
-				<a href="http://facebook.com/"><img class="social-link" src="../img/facebook_icon.png" alt="link to facebook"/></a>
+			<div class="row">
+				<div class="col-75p footer-copyright">
+					<p>mail to webmaster: <a href="mailto:someone@example.com">someone@example.com</a>.</p>
+					<p>Copyright &copy;2018 Northside Art Gallery</p>
+				</div>
+				<div class="right">
+					<a href="http://twitter.com"><img class="social-link" src="../img/twitter_icon.png" alt="link to twitter"/></a>
+					<a href="http://facebook.com/"><img class="social-link" src="../img/facebook_icon.png" alt="link to facebook"/></a>
+				</div>
 			</div>
 		</div>
 	</footer>
 
-</body>
+	</body>
 </html>
